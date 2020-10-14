@@ -29,7 +29,25 @@
     font-size: .36rem;
    display: flex;
   }
+  .header-left{
+    width: .4rem;
+    padding: 0 .2rem;
+    text-align: center;
+    font-weight: bold;
+  }
   .header-search{
-    flex:1
+    flex:1;
+    background: #fff;
+    height:.6rem;
+    margin: .14rem  0;
+    border-radius: .1rem ;
+    color:#e4e7ea;
+    line-height: .6rem;
+    font-size: .28rem;
+    padding-left:.2rem ;
+  }
+  .header-right{
+    font-size: .28rem;
+    padding: 0 .2rem;
   }
 </style>
