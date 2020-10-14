@@ -23,9 +23,13 @@
   .header{
     width: 100%;
     height:.88rem;
+    line-height: .88rem;
     background: #00bcd4;
     color:#fff;
     font-size: .36rem;
-    display: flex;
+   display: flex;
+  }
+  .header-search{
+    flex:1
   }
 </style>
