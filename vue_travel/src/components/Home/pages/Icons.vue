@@ -1,9 +1,15 @@
 <template>
   <div class="icons">
-      <div class="icons-item" v-for='item in iconsList' :key='item.id'>
-        <img :src="item.imgUlr" />
-        <p>{{item.title}}</p>
+    <swiper :options="swiperOption" ref="mySwiper">
+      <swiper-slide  v-for='item in page' :key='item.id'>
+      <div class="icons-item" v-for='page in item'>
+        <img :src="page.imgUlr" />
+        <p>{{page.title}}</p>
       </div>
+      </swiper-slide>
+
+    </swiper>
+
 
 
   </div>
@@ -13,6 +19,7 @@
   export default{
     data(){
       return{
+        swiperOption:{},
         iconsList:[
           {
             id:'01',
@@ -65,6 +72,19 @@
              title:"民宿客栈"
           },
         ]
+      }
+
+    },
+    computed:{
+      page(){
+        let pages = [];
+        this.iconsList.forEach((item,index)=>{
+         let idx = Math.floor(index/8);//向下取整
+         if(!pages[idx]) pages[idx] = [];
+         pages[idx].push(item)
+
+        })
+        return pages;
       }
     }
   }
