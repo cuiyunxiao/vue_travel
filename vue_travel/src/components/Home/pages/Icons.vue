@@ -1,7 +1,7 @@
 <template>
   <div class="icons">
     <swiper :options="swiperOption" ref="mySwiper">
-      <swiper-slide  v-for='item in page' :key='item.id'>
+      <swiper-slide  v-for='(item,key) in page' :key='key'>
       <div class="icons-item" v-for='page in item'>
         <img :src="page.imgUlr" />
         <p>{{page.title}}</p>
