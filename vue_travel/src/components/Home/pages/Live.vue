@@ -64,22 +64,8 @@ export default{
           pre: '20',
           map: '20'
         },
-        {
-          id: '01',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-          title: '故宫',
-          message: '20',
-          pre: '20',
-          map: '20'
-        },
-        {
-          id: '01',
-          imgUrl: 'https://imgs.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
-          title: '故宫',
-          message: '20',
-          pre: '20',
-          map: '20'
-        },
+        
+        
         {
           id: '01',
           imgUrl: 'https://imgs.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_200x200_1bc99086.jpg',
